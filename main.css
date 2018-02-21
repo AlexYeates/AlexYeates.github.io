@@ -7,7 +7,7 @@ h1, h2, h3, h4, p, li {
 }
 
 .container {
-  position: fixed;
+  position: absolute;
   text-align: center;
   margin-top: 350px;
   height: 350px;
