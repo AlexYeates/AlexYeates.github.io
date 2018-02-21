@@ -40,6 +40,11 @@ hr {
 /* ----------- Mobile & Tablet ----------- */
 
 @media only screen and (max-device-width: 1050px) {
+  body {
+    background-image: url('./img/background-image');
+    background-repeat: no-repeat;
+  }
+
   h1, h2, h3, h4, p, li {
     color: #212121;
     font-family: 'Asap Condensed', sans-serif;
