@@ -41,7 +41,7 @@ hr {
 
 @media only screen and (max-device-width: 1050px) {
   body {
-    background-image: url('./img/background-image.jpeg');
+    background-image: url('./img/background-mobile.jpeg');
     background-repeat: no-repeat;
   }
 
