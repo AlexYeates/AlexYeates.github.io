@@ -40,9 +40,14 @@ hr {
 /* ----------- Mobile & Tablet ----------- */
 
 @media only screen and (max-device-width: 1050px) {
+
+  #background {
+    display: none;
+  }
+
   body {
-    background-image: url('./img/background-mobile.jpeg');
-    background-repeat: no-repeat;
+    background-image: url('./img/background-mobile.jpg');
+
   }
 
   h1, h2, h3, h4, p, li {
