@@ -9,7 +9,6 @@ h1, h2, h3, h4, p, li {
 .container {
   position: absolute;
   text-align: center;
-  margin-top: 5%;
   height: 350px;
   width: 100%;
 }
