@@ -39,6 +39,7 @@ hr {
   border-radius: 100%;
   background-color: #ff4c4c;  
   margin: 0 auto;
+  cursor: pointer;
 }
 
 #background-video {
