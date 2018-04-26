@@ -6,8 +6,8 @@ const slideTwo = $('.slide-two');
 
 // EVENT LISTENERS:
 button.click(function () {
-  slideOne.addClass('hide');
-  backgroundVideo.addClass('hide');
+  slideOne.remove();
+  backgroundVideo.remove();
   slideTwo.removeClass('hide');
 });
 
