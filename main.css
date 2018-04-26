@@ -1,10 +1,9 @@
 /* ----------- Desktop ----------- */
 
 h1, h2, h3, h4, p, li {
-  color: #fff;
+  color: #212121;
   font-family: 'Asap Condensed', sans-serif;
   font-size: 45px;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 hr {
@@ -25,6 +24,8 @@ hr {
   border-radius: 30px;
   height: 500px;
   width: 500px;
+  background-color: #fff;
+  opacity: 0.9;
 }
 
 .hide {
@@ -34,7 +35,7 @@ hr {
 .touch-button {
   height: 150px;
   width: 150px;
-  border: 2px solid #212121;
+  border: 5px solid #212121;
   border-radius: 100%;
   background-color: #ff4c4c;  
   margin: 0 auto;
