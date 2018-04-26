@@ -4,32 +4,38 @@
 <head>
   <meta charset="utf-8">
   <title>Alex Yeates</title>
-  <script type="text/javascript" src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="main.css">
   <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
 </head>
 
 <body>
 
-  <video autoplay muted loop id="background">
+  <video autoplay muted loop id="background-video">
     <source src="./img/background.mp4" type="video/mp4">
   </video>
 
-    <div class="container">
-      <div class="content">
-        <h1>Alex Yeates<br />Front End Developer</h1>
-      </div>
-      <hr>
-      <div class="links">
-        <a href="https://twitter.com/alex_yeates" target="_blank"><img src="./img/favicon-twitter.png" alt=""></a>
-        <a href="https://github.com/alexyeates" target="_blank"><img src="./img/favicon-github.png" alt=""></a>
-        <a href="https://www.linkedin.com/in/alex-yeates-897799138/" target="_blank"><img src="./img/favicon-linkedin.png" alt=""></a>
-        <a href="mailto:hi@alexyeates.com"><img src="./img/favicon-email.png" alt=""></a>
-      </div>
+  <div class="container">
+    <div class="slide-one">
+
+      <h1>Alex Yeates
+        <br /> 
+        Front End Developer
+        <hr>
+        DON'T TOUCH THIS BIG RED BEAUTIFUL BUTTON!
+      </h1>
+
+      <div class="touch-button"></div>
+
     </div>
 
+    <div class="slide-two hide">
+      <h1>WOW YOU BROKE IT.</h1>
 
+    </div>
 
-  </body>
+  </div>
+  <script type="text/javascript" src="app.js"></script>
+</body>
 
-  </html>
+</html>

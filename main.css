@@ -1,34 +1,46 @@
 /* ----------- Desktop ----------- */
 
 h1, h2, h3, h4, p, li {
-  color: #212121;
+  color: #fff;
   font-family: 'Asap Condensed', sans-serif;
   font-size: 45px;
-}
-
-.container {
-  position: absolute;
-  text-align: center;
-  height: 350px;
-  width: 100%;
-}
-
-.content {
-  padding-top: 40px;
-}
-
-.links img {
-  margin-top: 10px;
-  padding: 15px;
-  width: 50px;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 hr {
   width: 350px;
-  border: 3px dashed #212121;
+  border: 5px dashed #fff;
 }
 
-#background {
+.container {
+  position: relative;
+  text-align: center;
+  width: 500px;
+  margin: 5% auto;
+}
+
+.slide-one {
+  position: absolute;
+  border: 5px solid #fff;
+  border-radius: 30px;
+  height: 500px;
+  width: 500px;
+}
+
+.hide {
+  display: none;
+}
+
+.touch-button {
+  height: 150px;
+  width: 150px;
+  border: 2px solid #212121;
+  border-radius: 100%;
+  background-color: #ff4c4c;  
+  margin: 0 auto;
+}
+
+#background-video {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -40,31 +52,28 @@ hr {
 
 @media only screen and (max-device-width: 1050px) {
 
-  #background {
-    display: none;
-  }
-
-  body {
-    background-image: url('./img/background-mobile.jpg');
-  }
-  
   .container {
     margin-top: 15%;
   }
 
+  .slide-one {
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+  }
+
   h1, h2, h3, h4, p, li {
-    color: #212121;
+    color: #fff;
     font-family: 'Asap Condensed', sans-serif;
     font-size: 100px;
   }
-  .links img {
-    margin-top: 10px;
-    padding: 25px;
-    width: 120px;
-    margin-top: 40px;
-  }
+
   hr {
     width: 500px;
     border: 10px dashed #212121;
   }
+
+  #background-video {
+    display: none;
+  }
+
 }
