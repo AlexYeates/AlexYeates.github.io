@@ -1,0 +1,10 @@
+{
+  "name": "alexyeates.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AlexYeates/alexyeates.github.io.git",
+  "author": "AlexYeates <hi@alexyeates.com>",
+  "license": "MIT",
+  "dependencies": {
+  }
+}

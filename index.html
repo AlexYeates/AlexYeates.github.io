@@ -5,49 +5,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Yeates</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
-
 <body>
 
-  <video autoplay muted loop id="background-video">
-    <source src="./img/background.mp4" type="video/mp4">
-  </video>
-
   <div class="container">
-    <div class="slide-one">
-
-      <h1>Alex Yeates
-        <br /> 
-        Front End Developer
-        <br />
-        <br />
-        DON'T TOUCH THIS BIG RED BEAUTIFUL BUTTON!
-      </h1>
-
-      <div class="touch-button"></div>
-
-    </div>
-
-    <div class="slide-two hide">
-      <h1>YOU CLEARLY DON'T LISTEN TO RULES. 
-        <br/>
-        <br/>
-        SO WHY LISTEN TO YOUR MANAGER? 
-        <br/>
-        <br/>
-        JUST GO AHEAD AND HIRE ME.
-        <br/>
-        <br/>
-        <a href="mailto:hi@alexyeates.com">hi@alexyeates.com</a>
-      </h1>
-
-    </div>
-
+      <div class="row">
+        <div class="col-full">
+            <h1>Alex Yeates</h1>
+            <h2>Full Stack JavaScript Developer</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-grid animated zoomIn">
+          <ul>
+            <li>Portfolio</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+      </div>
   </div>
-  <script type="text/javascript" src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>
