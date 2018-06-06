@@ -6,39 +6,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Yeates</title>
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
 </head>
-<body>
 
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <span class="navbar-brand" href="#">Alex Yeates</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Social</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-success my-2 my-sm-0" type="submit">HIRE!</button>
+      </form>
+    </div>
+  </nav>
   <div class="container">
-      <div class="row">
-        <div class="col-full">
-            <h1>Alex Yeates</h1>
-            <h2>Full Stack JavaScript Developer</h2>
-            <h2>hi@alexyeates.com</h2>
+    <div class="row top-buffer">
+      <div class="col-12 text-center">
+        <h1>Alex Yeates</h1>
+        <h2>London based Full Stack JavaScript Developer</h2>
+        <hr>
+        <p>I'm a JavaScript developer based in London, UK. I currently work at Selfridges and am a part time teaching assistant
+          at General Assembly. I have experience with building and deploying APIs and consuming them with a front end. If
+          you have a web app idea and need prototyping, I'm your guy.</p>
+        <hr>
+        <button type="button" class="btn btn-outline-primary">JavaScript</button>
+        <button type="button" class="btn btn-outline-primary">Node.js</button>
+        <button type="button" class="btn btn-outline-primary">Express.js</button>
+        <button type="button" class="btn btn-outline-primary">Mocha.js</button>
+        <button type="button" class="btn btn-outline-primary">Vue.js</button>
+        <button type="button" class="btn btn-outline-primary">HTML</button>
+        <button type="button" class="btn btn-outline-primary">CSS</button>
+        <button type="button" class="btn btn-outline-primary">Bootstrap</button>
+      </div>
+    </div>
+
+    <div class="row top-buffer">
+      <div class="col-12 text-center">
+        <h1>Portfolio</h1>
+        <br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card mx-auto" style="width: 18rem;">
+        <img class="card-img-top" src="img/lime-crime-quiz.png" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">A multiple choice quiz I made for Selfridges using jQuery</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-grid animated bounceIn">
-          <ul>
-            <li class="hvr-glow portfolioButton">Portfolio</li>
-            <!-- <li class="hvr-glow">Blog</li> -->
-          </ul>
-        </div> 
-      </div>
-      <div class="row">
-        <div class="col-grid portfolio animated">
-            <img src="http://www.fillmurray.com/250/250" alt="">
-            <img src="http://www.fillmurray.com/250/250" alt="">
-            <img src="http://www.fillmurray.com/250/250" alt="">
-            <img src="http://www.fillmurray.com/250/250" alt="">
+      <div class="card mx-auto" style="width: 18rem;">
+        <img class="card-img-top" src="img/runch.png" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">An app for professionals who want to go for a run and network on their lunch break. Built using AngularJS and Node.js
+          </p>
         </div>
       </div>
+      <div class="card mx-auto" style="width: 18rem;">
+        <img class="card-img-top" src="img/balloon-burst.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">A JavaScript game where you pop balloons, with the speed of them increasing as time goes on</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
+
+
 </body>
 
 </html>
