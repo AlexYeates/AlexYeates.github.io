@@ -54,6 +54,12 @@ nav li {
   height: 100vh;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* ABOUT: */
 
 .about-buffer {
@@ -91,19 +97,46 @@ nav li {
 
 .project {
   clear: both;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .project img {
   width: 50%;
   float: left;
-  height: 450;
+  height: 450px;
 }
 
-.project p {
+.project .project-copy {
   width: 50%;
   float: left;
-  height: 450;
+  height: 450px;
+  margin: 0;
+  color: #fff;
+  background-color: lightskyblue
+}
+
+.project-copy h1,
+.project-copy p {
+  padding: 30px;
+}
+
+.project-button {
+  margin: 5px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: lightskyblue;
+  border: 1px solid #fff;
+  opacity: 1;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.project-button:hover {
+  transition: 0.3s ease-in-out;
+  color: lightskyblue;
+  background-color: #fff;
+  opacity: 1;
 }
 
 /* CONTACT: */
