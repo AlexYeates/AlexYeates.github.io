@@ -22,7 +22,10 @@ gulp.task('build', function (callback) {
 
 gulp.task('deploy', function () {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages())
+    .pipe(ghPages({
+      remoteUrl: 'https://github.com/AlexYeates/alexyeates.github.io',
+      branch: 'master'
+    }))
 })
 
 gulp.task('watch', ['browserSync', 'sass'], function () {
