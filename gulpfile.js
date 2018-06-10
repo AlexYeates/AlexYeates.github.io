@@ -20,10 +20,7 @@ gulp.task('build', function (callback) {
   runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts', 'cname'], callback)
 })
 
-const options = { 
-  remoteUrl: 'https://github.com/AlexYeates/alexyeates.github.io.git',
-  branch: 'master'
-};
+const options = { remoteUrl: 'https://github.com/AlexYeates/alexyeates.github.io.git', branch: 'master' }
 gulp.task('deploy', function () {
   return gulp.src('./dist/**/*')
     .pipe(ghPages(options))
