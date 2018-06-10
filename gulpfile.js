@@ -20,9 +20,13 @@ gulp.task('build', function (callback) {
   runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts', 'cname'], callback)
 })
 
+
+const options = { 
+  branch: 'master'
+};
 gulp.task('deploy', function () {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages())
+    .pipe(ghPages(options))
 })
 
 gulp.task('watch', ['browserSync', 'sass'], function () {
