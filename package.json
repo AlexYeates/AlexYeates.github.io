@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-
+    "gulp-gh-pages": "^0.5.4"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -26,7 +26,6 @@
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.0",
     "gulp-useref": "^3.1.5",
-    "gulp-gh-pages": "^0.5.4",
     "run-sequence": "^2.2.1"
   }
 }
