@@ -22,6 +22,7 @@ gulp.task('build', function (callback) {
 
 
 const options = { 
+  remoteUrl: 'https://github.com/AlexYeates/alexyeates.github.io.git',
   branch: 'master'
 };
 gulp.task('deploy', function () {
