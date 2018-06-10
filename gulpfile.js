@@ -16,7 +16,7 @@ gulp.task('default', function (callback) {
 })
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts'], callback)
+  runSequence('clean:docs', ['sass', 'useref', 'images', 'fonts'], callback)
 })
 
 gulp.task('watch', ['browserSync', 'sass'], function () {
@@ -47,12 +47,12 @@ gulp.task('images', function () {
     .pipe(cache(imagemin({
       interlaced: true
     })))
-    .pipe(gulp.dest('dist/images'))
+    .pipe(gulp.dest('docs/images'))
 })
 
 gulp.task('fonts', function () {
   return gulp.src('app/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'))
+    .pipe(gulp.dest('docs/fonts'))
 })
 
 gulp.task('useref', function () {
@@ -60,11 +60,11 @@ gulp.task('useref', function () {
     .pipe(useref())
     .pipe(gulpIf('*.js', babel()))
     .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('docs'))
     .pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('docs'))
 })
 
-gulp.task('clean:dist', function () {
-  return del.sync('dist')
+gulp.task('clean:docs', function () {
+  return del.sync('docs')
 })
