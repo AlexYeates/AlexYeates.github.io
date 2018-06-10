@@ -10,13 +10,19 @@ const cache = require('gulp-cache')
 const del = require('del')
 const runSequence = require('run-sequence')
 const babel = require('gulp-babel')
+const ghPages = require('gulp-gh-pages')
 
 gulp.task('default', function (callback) {
   runSequence(['sass', 'browserSync', 'watch'], callback)
 })
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts'], callback)
+  runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts', 'cname'], callback)
+})
+
+gulp.task('deploy', function () {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages())
 })
 
 gulp.task('watch', ['browserSync', 'sass'], function () {
@@ -43,7 +49,7 @@ gulp.task('sass', function () {
 })
 
 gulp.task('images', function () {
-  return gulp.src('app/image/**/*.+png|jpg|jpeg|gif|svg')
+  return gulp.src('app/images/**/*.+png|jpg|jpeg|gif|svg')
     .pipe(cache(imagemin({
       interlaced: true
     })))
@@ -63,6 +69,11 @@ gulp.task('useref', function () {
     .pipe(gulp.dest('dist'))
     .pipe(gulpIf('*.css', cssnano()))
     .pipe(gulp.dest('dist'))
+})
+
+gulp.task('cname', function () {
+  return gulp.src('CNAME')
+    .pipe(gulp.dest('dist/'))
 })
 
 gulp.task('clean:dist', function () {
