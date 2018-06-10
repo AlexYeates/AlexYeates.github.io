@@ -50,7 +50,7 @@ gulp.task('sass', function () {
 })
 
 gulp.task('images', function () {
-  return gulp.src('app/images/**/*.+png|jpg|jpeg|gif|svg')
+  return gulp.src('app/images/**/*')
     .pipe(cache(imagemin({
       interlaced: true
     })))
