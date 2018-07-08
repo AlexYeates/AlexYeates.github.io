@@ -1,7 +1,7 @@
 body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 50px repeat(3, 100vh);
+  grid-template-rows: 50px 100vh;
   align-items: stretch;
   nav {
     grid-column: 1 / 5;
@@ -95,6 +95,9 @@ body {
         h2 {
           margin-left: 15px;
         }
+        ul {
+          padding-left: 15px;
+        }
         a {
           color: #212121;
           text-decoration: none;
@@ -103,6 +106,9 @@ body {
           grid-column: 2/4;
           h2 {
             margin: 0;
+          }
+          ul {
+            padding-left: 0;
           }
         }
         @media screen and (max-width: 600px) {
