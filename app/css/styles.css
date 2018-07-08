@@ -3,7 +3,8 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 50px 100vh;
-  align-items: stretch; }
+  align-items: stretch;
+  background-color: #eaeaec; }
   body nav {
     grid-column: 1 / 5;
     display: grid;

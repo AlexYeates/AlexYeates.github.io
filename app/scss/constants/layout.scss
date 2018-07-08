@@ -3,6 +3,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 50px 100vh;
   align-items: stretch;
+  background-color: #eaeaec;
   nav {
     grid-column: 1 / 5;
     display: grid;
