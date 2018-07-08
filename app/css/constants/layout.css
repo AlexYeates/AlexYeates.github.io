@@ -52,12 +52,19 @@ body {
     body main section:nth-of-type(1) div:nth-of-type(1) h2 {
       text-align: center; }
     body main section:nth-of-type(1) div:nth-of-type(2) h2,
-    body main section:nth-of-type(1) div:nth-of-type(3) h2 {
+    body main section:nth-of-type(1) div:nth-of-type(3) h2,
+    body main section:nth-of-type(1) div:nth-of-type(4) h2 {
       border-bottom: 2px solid #48b0f5;
       border-right: 2px solid #48b0f5; }
     body main section:nth-of-type(1) div:nth-of-type(3) {
       align-self: start;
-      grid-column: 2/3; }
+      grid-column: 2/3;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+      body main section:nth-of-type(1) div:nth-of-type(3) h2 {
+        grid-column: 1 / 3; }
+      body main section:nth-of-type(1) div:nth-of-type(3) ul {
+        padding: 0; }
       @media screen and (max-width: 740px) {
         body main section:nth-of-type(1) div:nth-of-type(3) {
           grid-column: 2/4; } }
@@ -65,15 +72,18 @@ body {
         body main section:nth-of-type(1) div:nth-of-type(3) {
           grid-column: 1/5; } }
     body main section:nth-of-type(1) div:nth-of-type(4) {
-      grid-column: 3/4; }
+      grid-column: 3/4;
+      align-self: start; }
+      body main section:nth-of-type(1) div:nth-of-type(4) h2 {
+        margin-left: 15px; }
+      body main section:nth-of-type(1) div:nth-of-type(4) a {
+        color: #212121;
+        text-decoration: none; }
       @media screen and (max-width: 740px) {
         body main section:nth-of-type(1) div:nth-of-type(4) {
-          grid-column: 2/4; } }
+          grid-column: 2/4; }
+          body main section:nth-of-type(1) div:nth-of-type(4) h2 {
+            margin: 0; } }
       @media screen and (max-width: 600px) {
         body main section:nth-of-type(1) div:nth-of-type(4) {
           grid-column: 1/5; } }
-      body main section:nth-of-type(1) div:nth-of-type(4) ul {
-        margin-top: -30px; }
-        @media screen and (max-width: 740px) {
-          body main section:nth-of-type(1) div:nth-of-type(4) ul {
-            margin: 0; } }
