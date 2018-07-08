@@ -16,7 +16,7 @@ gulp.task('default', function (callback) {
 })
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts', 'cname'], callback)
+  runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts', 'redirects'], callback)
 })
 
 gulp.task('watch', ['browserSync', 'sass'], function () {
@@ -65,8 +65,8 @@ gulp.task('useref', function () {
     .pipe(gulp.dest('dist'))
 })
 
-gulp.task('cname', function () {
-  return gulp.src('CNAME')
+gulp.task('redirects', function () {
+  return gulp.src('_redirects')
     .pipe(gulp.dest('dist/'))
 })
 
