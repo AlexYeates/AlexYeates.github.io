@@ -11,17 +11,21 @@ function gtag() {
 gtag('js', new Date());
 gtag('config', 'UA-120742325-1');
 
-const trackOutboundLink = (url, e) => {
-  e.preventDefault();
+const trackOutboundLink = url => {
   gtag('event', 'click', {
     event_category: 'outbound',
     event_label: url,
     transport_type: 'beacon',
     event_callback: () => {
-      document.location = url;
+      window.open(url, '_blank');
     }
   });
 };
 
 const links = Array.from(document.querySelectorAll('a'));
-links.map(e => e.addEventListener('click', trackOutboundLink(e.href), false));
+links.map(e =>
+  e.addEventListener('click', event => {
+    event.preventDefault();
+    trackOutboundLink(e.href);
+  })
+);
