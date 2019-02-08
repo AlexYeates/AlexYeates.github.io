@@ -11,7 +11,8 @@ function gtag() {
 gtag('js', new Date());
 gtag('config', 'UA-120742325-1');
 
-const trackOutboundLink = (url, event) => {
+const trackOutboundLink = (url, e) => {
+  e.preventDefault();
   gtag('event', 'click', {
     event_category: 'outbound',
     event_label: url,
@@ -20,7 +21,6 @@ const trackOutboundLink = (url, event) => {
       document.location = url;
     }
   });
-  event.preventDefault();
 };
 
 const links = Array.from(document.querySelectorAll('a'));
