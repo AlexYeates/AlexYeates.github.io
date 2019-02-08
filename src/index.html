@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-120742325-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-120742325-1');
+    </script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Alex Yeates | Front End Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Alex Yeates is a London based Web Developer specialising in HTML, CSS and
+          JavaScript"
+    />
+    <meta
+      name="keywords"
+      content="front end developer, web developer, selfridges, general assembly, html, css, javascript, web development"
+    />
+    <meta name="robots" content="index,follow" />
+    <title>Alex Yeates | Front End Developer</title>
   </head>
 
   <body>
@@ -93,15 +116,22 @@
             type="text"
             name="name"
             placeholder="Dwayne 'The Rock' Johnson"
+            required
           />
 
           <label>Your Email:</label>
-          <input type="email" name="email" placeholder="the@rock.com" />
+          <input
+            type="email"
+            name="email"
+            placeholder="the@rock.com"
+            required
+          />
 
           <label>Message:</label>
           <textarea
             name="message"
             placeholder="Can you smell what I'm cooking..."
+            required
           ></textarea>
           <button type="submit">Send</button>
         </form>
