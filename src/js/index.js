@@ -16,8 +16,11 @@ const trackOutboundLink = url => {
     event_category: 'outbound',
     event_label: url,
     transport_type: 'beacon',
-    event_callback: function() {
+    event_callback: () => {
       document.location = url;
     }
   });
 };
+
+const links = Array.from(document.querySelectorAll('a'));
+links.map(e => e.addEventListener('click', trackOutboundLink(e.href)));
