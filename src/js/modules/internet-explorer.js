@@ -4,5 +4,5 @@ const isIE =
 
 if (isIE) {
   document.body.innerHTML =
-    '<p class="chromeframe"> You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> or <a href="https://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>to improve your experience.</p>';
+    '<p style="text-align: center;"> You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a>!</p>';
 }
