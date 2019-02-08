@@ -1,4 +1,5 @@
 import '../scss/main.scss';
+import './modules/internet-explorer.js';
 
 const imported = document.createElement('script');
 imported.src = 'https://www.googletagmanager.com/gtag/js?id=UA-120742325-1';
