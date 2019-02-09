@@ -1,9 +1,6 @@
 import '../scss/main.scss';
 import './modules/internet-explorer.js';
 
-const imported = document.createElement('script');
-imported.src = 'https://www.googletagmanager.com/gtag/js?id=UA-120742325-1';
-document.head.appendChild(imported);
 window.dataLayer = window.dataLayer || [];
 
 function gtag() {
@@ -14,14 +11,18 @@ gtag('js', new Date());
 gtag('config', 'UA-120742325-1');
 
 const trackOutboundLink = url => {
-  gtag('event', 'click', {
-    event_category: 'outbound',
-    event_label: url,
-    transport_type: 'beacon',
-    event_callback: () => {
-      window.open(url, '_blank');
-    }
-  });
+  if (window.gtag && gtag.loaded) {
+    gtag('event', 'click', {
+      event_category: 'outbound',
+      event_label: url,
+      transport_type: 'beacon',
+      event_callback: () => {
+        window.open(url, '_blank');
+      }
+    });
+  } else {
+    window.open(url, '_blank');
+  }
 };
 
 const links = Array.from(document.querySelectorAll('a'));
