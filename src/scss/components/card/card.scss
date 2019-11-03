@@ -1,0 +1,30 @@
+.c-card {
+  &__container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__avatar {
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+  }
+
+  &__bg {
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_howlbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -$spacing-unit;
+    bottom: -$spacing-unit;
+    left: -$spacing-unit;
+    right: -$spacing-unit;
+  }
+}
