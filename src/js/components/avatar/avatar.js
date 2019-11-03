@@ -1,5 +1,5 @@
-const images = document.querySelectorAll('.c-card__fg');
-const backgrounds = document.querySelectorAll('.c-card__bg');
+const foreground = document.querySelector('.c-avatar__fg');
+const background = document.querySelector('.c-avatar__bg');
 const range = 40;
 
 const calcValue = (a, b) => ((a / b) * range - range / 2).toFixed(1);
@@ -16,14 +16,9 @@ document.addEventListener(
       const yValue = calcValue(y, window.innerHeight);
       const xValue = calcValue(x, window.innerWidth);
 
-      [].forEach.call(images, image => {
-        image.style.transform = `translateX(${-xValue}px) translateY(${yValue}px)`;
-      });
-
-      [].forEach.call(backgrounds, background => {
-        background.style.backgroundPosition = `${xValue * 0.45}px ${-yValue *
-          0.45}px`;
-      });
+      foreground.style.transform = `translateX(${-xValue}px) translateY(${yValue}px)`;
+      background.style.backgroundPosition = `${xValue * 0.45}px ${-yValue *
+        0.45}px`;
     });
   },
   false

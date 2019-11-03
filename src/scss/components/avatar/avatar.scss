@@ -1,4 +1,4 @@
-.c-card {
+.c-avatar {
   &__container {
     position: absolute;
     top: 30%;
@@ -26,5 +26,9 @@
     bottom: -$spacing-unit;
     left: -$spacing-unit;
     right: -$spacing-unit;
+  }
+
+  &__fg {
+    transform: translateX(1px);
   }
 }
