@@ -1,4 +1,4 @@
 import '../scss/main.scss';
-import '../js/modules/polyfill.js';
-import '../js/modules/internet-explorer.js';
-import './modules/analytics.js';
+import './components/avatar/avatar.js';
+import './components/analytics/analytics.js';
+import './components/background/background.js';

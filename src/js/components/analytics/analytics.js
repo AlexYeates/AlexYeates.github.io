@@ -25,8 +25,8 @@ const trackOutboundLink = url => {
   }
 };
 
-const links = Array.from(document.querySelectorAll('a'));
-links.map(e =>
+const links = document.querySelectorAll('a');
+links.forEach(e =>
   e.addEventListener('click', event => {
     event.preventDefault();
     trackOutboundLink(e.href);
