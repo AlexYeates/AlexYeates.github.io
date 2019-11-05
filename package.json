@@ -7,6 +7,7 @@
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url ."
   },
+  "repository": "https://github.com/AlexYeates/alexyeates.com",
   "keywords": [],
   "author": "Alex Yeates",
   "license": "ISC",

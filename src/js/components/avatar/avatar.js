@@ -1,5 +1,5 @@
-const foreground = document.querySelector('.c-avatar__fg');
-const background = document.querySelector('.c-avatar__bg');
+const foreground = document.querySelector('[data-action="avatar__fg"]');
+const background = document.querySelector('[data-action="avatar__bg"]');
 const range = 40;
 
 const calcValue = (a, b) => ((a / b) * range - range / 2).toFixed(1);

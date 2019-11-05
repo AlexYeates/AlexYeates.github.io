@@ -1,0 +1,93 @@
+.c-cards {
+  &__container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__card {
+    position: relative;
+    width: $card-width;
+    height: $card-height;
+    transform-style: preserve-3d;
+    transform: rotatey(0deg) translatex(0px) translatey(0px);
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+    margin: 10px;
+    cursor: pointer;
+
+    &:hover {
+      transform: rotatey(45deg) translatex(0px) translatey(0px);
+    }
+
+    &.--open {
+      width: 2 * $card-width;
+      height: 2 * $card-height;
+      transform: rotatey(-180deg) translatex(0px) translatey(0px);
+    }
+  }
+
+  &__front {
+    transform: rotateY(0deg) translateZ(2px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $color-off-white;
+    border-radius: 5px;
+  }
+
+  &__title {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    color: $color-blue;
+  }
+
+  &__back {
+    transform: rotateY(180deg) translateZ(0px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $color-off-white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  &__btn {
+    font-size: 14px;
+    margin: 0;
+    display: inline-block;
+    background-color: $color-white;
+    padding: 5px 15px;
+    margin: 20px 0 0 0;
+    color: $color-white;
+    background-color: $color-blue;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: $color-blue-dark;
+    }
+  }
+}

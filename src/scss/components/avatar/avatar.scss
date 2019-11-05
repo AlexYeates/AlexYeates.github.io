@@ -1,12 +1,6 @@
 .c-avatar {
   &__container {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  &__avatar {
+    margin: $spacing-unit auto;
     overflow: hidden;
     position: relative;
     border-radius: 50%;
