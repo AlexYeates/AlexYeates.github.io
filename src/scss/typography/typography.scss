@@ -3,3 +3,25 @@
 h2 {
   font-family: Rubik, sans-serif;
 }
+
+p {
+  font-family: Rubik, sans-serif;
+  color: $color-blue;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+a {
+  text-decoration: none;
+  color: $color-blue;
+  font-size: 20px;
+
+  i {
+    color: $color-black;
+  }
+}
+
+i {
+  font-size: 50px;
+  padding: 15px;
+}
