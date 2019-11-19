@@ -27,10 +27,15 @@
       width: 2 * $card-width;
       height: 2 * $card-height;
       transform: rotatey(-180deg) translatex(0px) translatey(0px);
+
+      & .c-cards__front {
+        z-index: 0;
+      }
     }
   }
 
   &__front {
+    z-index: 2;
     transform: rotateY(0deg) translateZ(2px);
     position: absolute;
     top: 0;
